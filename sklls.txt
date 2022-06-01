@@ -1,0 +1,4 @@
+Skill:
+	Basic theory SDLC, STLC.
+	HTTP Methods of requests to the server
+	What is JSON, XML. Their structure
