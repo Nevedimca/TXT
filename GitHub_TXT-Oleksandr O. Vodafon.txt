@@ -1,0 +1,118 @@
+TXT
+ 	1. Создать внешний репозиторий c названием TXT.
+GitHub > Repos -> New -> TXT
+https://github.com/Nevedimca/TXT
+
+ 	2. Клонировать репозиторий TXT на локальный компьютер.
+Oleksandrs-iMac:Terminal macssd$ git clone git@github.com:Nevedimca/TXT.git
+Cloning into 'TXT'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+ 	3. Внутри локального TXT создать файл “new.txt”.
+Oleksandrs-iMac:Terminal macssd$ touch new.txt
+
+ 	4. Добавить файл под гит.
+Oleksandrs-iMac:TXT macssd$ git add new.txt
+
+ 	5. Закоммитить файл.
+Oleksandrs-iMac:TXT macssd$ git commit -m "add new.txt"
+[main 9c63ab3] add new.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 new.txt
+
+ 	6. Отправить файл на внешний GitHub репозиторий.
+Oleksandrs-iMac:TXT macssd$ git push
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 271 bytes | 271.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To github.com:Nevedimca/TXT.git
+   4f54587..9c63ab3  main -> main
+
+ 	7. Отредактировать содержание файла “new.txt” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате TXT.
+
+vim new.txt
+
+FULL NAM: Oleksandr O.M.
+Age: 33
+Number of pets: null
+Future desired salary: 1000
+
+ 	8. Отправить изменения на внешний репозиторий.
+git status > git add new.txt > git commit -am "change new.txt" > git push
+
+ 	9. Создать файл preferences.txt
+touch preferences.txt
+
+ 	10. В файл preferences.txt” добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате TXT.
+
+vim preferences.txt
+
+Favorite movie: Terminator
+Favourite TV show: Gods
+Favorite food: delicious
+Favorite time of year: Spring
+Side you would like to visit: Japan
+
+ 	11. Создать файл sklls.txt добавить информацию о скиллах которые будут изучены на курсе в формате TXT
+
+touch sklls.txt > vim sklls.txt
+
+Skill:
+	Basic theory SDLC, STLC.
+	HTTP Methods of requests to the server
+	What is JSON, XML. Their structure
+
+
+ 	12. Сделать коммит в одну строку.
+git add . > git commit -m "add preferences.txt and sklls.txt”
+
+[main 0dade2b] add preferences.txt and sklls.txt
+ 2 files changed, 9 insertions(+)
+ create mode 100644 preferences.txt
+ create mode 100644 sklls.txt
+
+ 	13. Отправить сразу 2 файла на внешний репозиторий.
+Oleksandrs-iMac:TXT macssd$ git push
+Counting objects: 4, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 567 bytes | 567.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To github.com:Nevedimca/TXT.git
+   0c45f8b..0dade2b  main -> main
+
+ 	14. На веб интерфейсе создать файл bug_report.txt.
+https://github.com/Nevedimca/TXT >Add file>Grease new file>
+
+ 	15. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+github.com > commit new file 
+
+ 	16. На веб интерфейсе модифицировать файл bug_report.txt, добавить баг репорт в формате TXT.
+
+title: Wellcome is spelled incorrectly
+description: You should change it to 'Welcome'
+
+ 	17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+github.com > commit changes
+
+ 	18. Синхронизировать внешний и локальный репозиторий TXT
+Git checkout main > git pull
+
+Oleksandrs-iMac:TXT macssd$ git pull
+remote: Enumerating objects: 7, done.
+remote: Counting objects: 100% (7/7), done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 6 (delta 2), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (6/6), done.
+From github.com:Nevedimca/TXT
+   0dade2b..3a46f02  main       -> origin/main
+Updating 0dade2b..3a46f02
+Fast-forward
+ bug_report.txt | 2 ++
+ 1 file changed, 2 insertions(+)
+ create mode 100644 bug_report.txt
