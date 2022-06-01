@@ -1,0 +1,4 @@
+FULL NAM: Oleksandr O.M.
+Age: 33
+Number of pets: null
+Future desired salary: 1000
